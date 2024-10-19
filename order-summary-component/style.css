@@ -1,0 +1,125 @@
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-color: #E1E9FF;
+}
+
+.card {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    align-items: center;
+    width: 90%;
+    font-size: 16px;
+    column-gap: 10%;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Red Hat Display", "sans-serif";
+    text-align: center;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.text {
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.text p {
+    font-size: 13px;
+    font-weight: 550;
+    color: #757E9F;
+    padding-inline: 10px;
+    line-height: 1.6;
+    margin-block: 14px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.plan div{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15px 45px;
+}
+
+.plan span:first-child{
+    font-weight: 800;
+}
+
+.plan span:nth-child(2){
+    color: #757E9F;
+    font-weight: 600;
+}
+
+.plan a {
+    color: blue;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+}
+
+img[class="music"] {
+    width: 40px;
+    height: 40px;
+}
+
+.pay {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0px 15px 15px #DCD5FF;
+    margin-block: 18px;
+    font-weight: 800;
+    font-size: 13px;
+    height: 39px;
+}
+
+.pay:hover {
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: white;
+    color: #7282A7;
+    text-decoration: none;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
+
+    .card {
+        max-width: 340px;
+    }
+}
