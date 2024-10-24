@@ -2,9 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
@@ -31,7 +28,7 @@ body {
     background-color: #7651DC;
     color: white;
     align-items: center;
-    padding-block: 16px 35px;
+    padding-block: 12px 35px;
     text-align: center;
 }
 
@@ -44,14 +41,14 @@ body {
     margin-block: 0 8px;
 }
 
-.card:first-child div:first-child{
+.card:first-child div:first-child {
     font-size: 2.5em;
     font-weight: 500;
     line-height: 0.9;
     padding: 25px;
 }
 
-.card:first-child div:nth-child(3){
+.card:first-child div:nth-child(3) {
     font-size: 1em;
 }
 
@@ -74,7 +71,8 @@ body {
     overflow: hidden;
 }
 
-.card:nth-child(3) h2, .card:nth-child(8) h2 {
+.card:nth-child(3) h2,
+.card:nth-child(8) h2 {
     margin-block: 17px 0;
     line-height: 1;
     font-weight: 600;
@@ -153,7 +151,7 @@ body {
 }
 
 .card:nth-child(7) em {
-    color: rgb(120,85,220);
+    color: rgb(120, 85, 220);
 }
 
 .card:nth-child(7) img {
@@ -172,6 +170,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
     .container {
         display: grid;
         grid-template-rows: 31vh 5vh 20vh 25vh;
@@ -191,7 +195,7 @@ body {
     }
 
     .card:first-child div:first-child {
-        padding: 25px;
+        padding: 26px;
     }
 
     .card:first-child div:nth-child(3) {
@@ -295,7 +299,7 @@ body {
     .card:nth-child(8) h2 {
         line-height: 0.9;
     }
-    
+
     .card:nth-child(8) img {
         width: 100%;
         max-width: unset;
