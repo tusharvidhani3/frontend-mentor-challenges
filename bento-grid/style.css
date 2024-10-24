@@ -188,7 +188,7 @@ body {
     }
 
     .card:first-child div:first-child {
-        padding: 15px;
+        padding: 25px;
     }
 
     .card:first-child div:nth-child(3) {
@@ -304,5 +304,10 @@ body {
         max-width: unset;
         width: unset;
     }
+}
 
+@media screen and (min-width: 1200px) {
+    .container {
+        font-size: 18px;
+    }
 }
