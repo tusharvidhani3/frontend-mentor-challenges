@@ -177,7 +177,7 @@ body {
         font-size: 14px;
         align-items: stretch;
         width: 120vmin;
-        height: 89vh;
+        height: 89vmin;
     }
 
     .card:first-child {
