@@ -9,10 +9,8 @@ body {
     --dark-bg-primary: #202D36;
     --dark-bg-secondary: #2B3743;
     --dark-color: white;
-    --light-shadow-color: #f1f1f1;
-    --dark-shadow-color: #1E2B34;
-    --light-bg-hover: rgb(230, 230, 230);
-    --dark-bg-hover: #455868;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    --bg-hover: rgba(0, 0, 0, .1);
 }
 
 .dark {
@@ -25,8 +23,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    box-shadow: 0 4px 4px var(--light-shadow-color);
+    box-shadow: var(--box-shadow);
     height: 30px;
+    background-color: var(--light-bg-secondary);
 }
 
 header h1 {
@@ -36,7 +35,7 @@ header h1 {
 
 .dark header {
     background-color: var(--dark-bg-secondary);
-    box-shadow: 0 4px 4px var(--dark-shadow-color);
+    box-shadow: 0 0 10px var(--dark-shadow-color);
 }
 
 .mode {
@@ -51,7 +50,7 @@ header h1 {
 
 .mode:hover {
     cursor: pointer;
-    background-color: var(--light-bg-hover);
+    background-color: var(--bg-hover);
 }
 
 .dark .mode {
@@ -59,7 +58,7 @@ header h1 {
 }
 
 .dark .mode:hover {
-    background-color: var(--dark-bg-hover);
+    background-color: var(--bg-hover);
 }
 
 .mode svg {
@@ -76,7 +75,7 @@ header h1 {
     background-color: var(--light-bg-secondary);
     border: none;
     gap: 8px;
-    box-shadow: 0 0 10px 5px var(--light-shadow-color);
+    box-shadow: var(--box-shadow);
     height: 30px;
     padding: 16px;
     margin: 40px 8%;
@@ -84,17 +83,17 @@ header h1 {
 
 .back:hover {
     cursor: pointer;
-    background-color: var(--light-bg-hover);
+    background-color: var(--bg-hover);
 }
 
 .dark .back {
     color: var(--dark-color);
     background-color: var(--dark-bg-secondary);
-    box-shadow: 0 0 10px 5px var(--dark-shadow-color);
+    box-shadow: var(--box-shadow);
 }
 
 .dark .back:hover {
-    background-color: var(--dark-bg-hover);
+    background-color: var(--bg-hover);
 }
 
 .back svg{
@@ -109,7 +108,6 @@ header h1 {
 .country {
     display: flex;
     justify-content: space-evenly;
-    height: 300px;
     flex-direction: column;
     margin-inline: 20px;
 }
@@ -119,21 +117,13 @@ header h1 {
     margin-inline: auto;
 }
 
-.details dt, .details dd {
-    display: inline-block;
+.details p {
+    font-weight: 600;
     margin-block: 5px;
 }
 
-.details dt {
-    font-weight: 800;
-    font-size: 12px;
-    margin-inline: 0;
-}
-
-.details dd {
+.details span {
     font-weight: 400;
-    margin-inline: 5px;
-    font-size: 12px;
 }
 
 .details ul {
@@ -147,24 +137,34 @@ header h1 {
     margin: 5px;
     background-color: var(--light-bg-secondary);
     padding: 4px 10px;
-    box-shadow: 0 0 10px 5px var(--light-shadow-color);
+    box-shadow: var(--box-shadow);
     font-weight: 400;
     font-size: 12px;
 }
 
 .dark .details li {
     background-color: var(--dark-bg-secondary);
-    box-shadow: 0 0 10px 5px var(--dark-shadow-color);
+    box-shadow: var(--box-shadow);
 }
 
-.details dl {
-    margin-block: 10px;
+.details .borders {
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.details ul {
+    display: inline;
 }
 
 .info-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
+}
+
+.details {
+    font-size: 12px
 }
 
 @media (min-width: 768px) {
@@ -181,6 +181,7 @@ header h1 {
     .country img {
         width: 40%;
         margin-inline: 0;
+        max-height: 300px;
     }
 
     .info-list {
@@ -189,9 +190,10 @@ header h1 {
 
     .details {
         width: 40%;
+        height: 100%;
     }
 
-    .details > dl, .details h2 {
+    .details h2 {
         margin-block: 16px;
     }
 
