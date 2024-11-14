@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link rel="stylesheet" href="country-info.css">
+    <script src="country-info.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button class="mode"><svg data-name="Layer 2" id="Layer_2" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><path class="mode-icon" d="M18.44,34.68a18.22,18.22,0,0,1-2.94-.24,18.18,18.18,0,0,1-15-20.86A18.06,18.06,0,0,1,9.59.63,2.42,2.42,0,0,1,12.2.79a2.39,2.39,0,0,1,1,2.41L11.9,3.1l1.23.22A15.66,15.66,0,0,0,23.34,21h0a15.82,15.82,0,0,0,8.47.53A2.44,2.44,0,0,1,34.47,25,18.18,18.18,0,0,1,18.44,34.68ZM10.67,2.89a15.67,15.67,0,0,0-5,22.77A15.66,15.66,0,0,0,32.18,24a18.49,18.49,0,0,1-9.65-.64A18.18,18.18,0,0,1,10.67,2.89Z"/></svg>Dark Mode</button>
+    </header>
+
+    <main>
+        <button class="back"><svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="back-icon" clip-rule="evenodd" d="M31.106,15H3.278l8.325-8.293  c0.391-0.391,0.391-1.024,0-1.414c-0.391-0.391-1.024-0.391-1.414,0l-9.9,9.899c-0.385,0.385-0.385,1.029,0,1.414l9.9,9.9  c0.391,0.391,1.024,0.391,1.414,0c0.391-0.391,0.391-1.024,0-1.414L3.278,17h27.828c0.552,0,1-0.448,1-1  C32.106,15.448,31.658,15,31.106,15z" fill="#121313" fill-rule="evenodd" id="Arrow_Back"/><g/><g/><g/><g/><g/><g/></svg>Back</button>
+        <div class="country">
+            <img id="flag" alt="country flag">
+            <div class="details">
+                <h2 id="name"></h2>
+                <div class="info-list">
+                <dl>
+                    <dt>Native Name: </dt><dd id="nativeName"></dd>
+                    <br>
+                    <dt>Population: </dt><dd id="population"></dd>
+                    <br>
+                    <dt>Region: </dt><dd id="region"></dd>
+                    <br>
+                    <dt>Sub Region: </dt><dd id="subregion"></dd>
+                    <br>
+                    <dt>Capital: </dt><dd id="capital"></dd>
+                </dl>
+                <dl>
+                    <dt>Top Level Domain: </dt><dd id="topLevelDomain"></dd>
+                    <br>
+                    <dt>Currencies: </dt><dd id="currencies"></dd>
+                    <br>
+                    <dt>Languages: </dt><dd id="languages"></dd>
+                </dl>
+            </div>
+                <dl>
+                    <dt>Border Countries: </dt><dd><ul id="borderCountries"></ul></dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
